@@ -1,0 +1,26 @@
+body{
+    overflow-x: hidden;
+}
+
+
+.recommended_text {
+
+  position: relative;
+  left: 280px;
+  top: -15px;
+  border-radius: 5px;
+  background-color: antiquewhite;
+  width: 185px;
+  background-color: rgba(84, 232, 185, 0.558);
+  color: rgba(0, 0, 0, 0.696) ;
+}
+
+/* .select_button:active{
+ background-color: red;
+ color: white;
+} */
+
+.card_view{
+    margin-top: 120px;
+    overflow-y: hidden;
+}
