@@ -1,35 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import AppsdeployerPng from "../assets/Appsdeployer.png";
 import ProgressBar from "react-bootstrap/ProgressBar";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Button, Card, Col, Tooltip } from "react-bootstrap";
 import Table from "react-bootstrap/Table";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
-import { useDispatch, useSelector } from "react-redux";
-import { add, addTask } from "../redux/ProjectSlice";
-
-const Page5 = () => {
-  const dispatch = useDispatch();
-  const navigate = useNavigate();
-
-  const value = useSelector((e) => e.app.ProjectName);
-
-  const [input1Value, setInput1Value] = useState("");
-  const [input2Value, setInput2Value] = useState("");
-  const [input3Value, setInput3Value] = useState("");
-  const [input4Value, setInput4Value] = useState("");
-
-  const buttonOnClick = () => {
-    if (!input1Value || !input2Value || !input3Value || !input4Value) {
-      window.alert("Please Fill all the Input field");
-    } else {
-      dispatch(addTask(input1Value));
-      dispatch(addTask(input2Value));
-      dispatch(addTask(input3Value));
-      dispatch(addTask(input4Value));
-      navigate("/page6");
-    }
-  };
+const Page8 = () => {
   return (
     <>
       <img
@@ -217,4 +193,4 @@ const Page5 = () => {
   );
 };
 
-export default Page5;
+export default Page8;

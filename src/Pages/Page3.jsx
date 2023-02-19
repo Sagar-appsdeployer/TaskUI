@@ -10,24 +10,24 @@ const Page3 = () => {
       <img
         src={AppsdeployerPng}
         alt=""
-        style={{ width: "250px" }}
+        style={{ width: "200px" }}
         className="p-2"
       />
 
       <section>
         <div className="container">
-          <p className="display-6 mt-4">
+          <p className="display-6 mt-4 text-light">
             What's your main objective
             <br /> in Asana?
           </p>
-          <p className="text-muted m-1">
+          <p className="text-light m-1">
             Your choice here won't limit what you can do in Asana.
           </p>
           <div className="container mt-4">
             <div className="col">
               <Card
                 style={{ width: "400px" }}
-                className="m-3 p-2 border-0 shadow"
+                className="card_plan m-3 p-2  shadow"
               >
                 <span className="recommended_text">✨Recommended for you</span>
                 <h6>
@@ -42,7 +42,7 @@ const Page3 = () => {
               </Card>
               <Card
                 style={{ width: "400px" }}
-                className="m-3 p-2 border-0 shadow"
+                className="card_plan m-3 p-2 border-0 shadow "
               >
                 <h6>
                   {" "}
@@ -56,7 +56,7 @@ const Page3 = () => {
               </Card>
               <Card
                 style={{ width: "400px" }}
-                className="m-3 p-2 border-0 shadow"
+                className=" card_plan m-3 p-2 border-0 shadow"
               >
                 <h6>
                   {" "}
@@ -74,17 +74,25 @@ const Page3 = () => {
 
             <div className="container">
               <NavLink to="/page4">
-                <Button variant="dark" className="me-3 px-3">
-                  Continue
+                <Button variant="light" className="me-3 px-3 glow-on-hover">
+                  Continue &rarr;
                 </Button>
               </NavLink>
-              <Button variant="outline-dark" className="px-4">
-                I'm not sure yet
-              </Button>
+
+              <NavLink to="/page4">
+                <Button variant="outline-light" className="px-4 glow-on-hover">
+                  I'm not sure yet
+                </Button>
+              </NavLink>
             </div>
           </div>
         </div>
       </section>
+      <div>
+        <div className="wave"></div>
+        <div className="wave"></div>
+        <div className="wave"></div>
+      </div>
     </>
   );
 };
