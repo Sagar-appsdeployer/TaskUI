@@ -6,7 +6,9 @@ import { Button, Card, Col, Tooltip } from "react-bootstrap";
 import Table from "react-bootstrap/Table";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import { useDispatch, useSelector } from "react-redux";
-import { add, addTask } from "../redux/ProjectSlice";
+import { addTask } from "../redux/ProjectSlice";
+
+/* ..............................Page 4 Component ..............................*/
 
 const Page5 = () => {
   const dispatch = useDispatch();
@@ -32,12 +34,17 @@ const Page5 = () => {
   };
   return (
     <>
+      {/*............... AppsDeployer Image............... */}
+
       <img
         src={AppsdeployerPng}
         alt=""
         style={{ width: "200px" }}
         className="p-2"
       />
+
+      {/*............... Page Section Start............... */}
+
       <div className="row">
         <Col>
           <div className="container m-5 ">
@@ -109,7 +116,7 @@ const Page5 = () => {
             </div>
             <div className="container">
               <Button
-                className="mt-4 px-3 glow-on-hover"
+                className="mt-4 px-3 glow-on-hover ms-3"
                 variant="light"
                 onClick={buttonOnClick}
               >
@@ -208,6 +215,10 @@ const Page5 = () => {
           </OverlayTrigger>
         </Col>
       </div>
+      {/*............... Page Section End............... */}
+
+      {/* ...............Animation Bottom Section ...............*/}
+
       <div>
         <div className="wave"></div>
         <div className="wave"></div>

@@ -1,14 +1,16 @@
 import React from "react";
 import AppsdeployerPng from "../assets/Appsdeployer.png";
-import Dropdown from "react-bootstrap/Dropdown";
-import DropdownButton from "react-bootstrap/DropdownButton";
 import { NavLink } from "react-router-dom";
 import { Button } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import "./page.css";
+
+/* ..............................Page 1 Component ..............................*/
+
 const Page1 = () => {
   return (
     <>
+      {/*............... AppsDeployer Image............... */}
       <img
         src={AppsdeployerPng}
         alt=""
@@ -16,6 +18,7 @@ const Page1 = () => {
         className="p-2"
       />
 
+      {/* ...............Page Section Start ...............*/}
       <section>
         <div className="container">
           <p className="display-6 mt-5 text-light">
@@ -51,6 +54,10 @@ const Page1 = () => {
           </div>
         </div>
       </section>
+      {/* ...............Page Section End ...............*/}
+
+      {/* ...............Animation Bottom Section ...............*/}
+
       <div>
         <div className="wave"></div>
         <div className="wave"></div>

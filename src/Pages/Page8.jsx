@@ -5,15 +5,23 @@ import { NavLink } from "react-router-dom";
 import { Button, Card, Col, Tooltip } from "react-bootstrap";
 import Table from "react-bootstrap/Table";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+
+/* ..............................Page 4 Component ..............................*/
+
 const Page8 = () => {
   return (
     <>
+      {/*............... AppsDeployer Image............... */}
+
       <img
         src={AppsdeployerPng}
         alt=""
         style={{ width: "200px" }}
         className="p-2"
       />
+
+      {/*............... Page Section Start............... */}
+
       <div className="row">
         <Col>
           <div className="container m-5 ">
@@ -184,6 +192,10 @@ const Page8 = () => {
           </OverlayTrigger>
         </Col>
       </div>
+      {/*............... Page Section End............... */}
+
+      {/* ...............Animation Bottom Section ...............*/}
+
       <div>
         <div className="wave"></div>
         <div className="wave"></div>

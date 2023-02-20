@@ -3,15 +3,21 @@ import { Button } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import AppsdeployerPng from "../assets/Appsdeployer.png";
 
+/* ..............................Page 2 Component ..............................*/
+
 const Page2 = () => {
   return (
     <>
+      {/*............... AppsDeployer Image............... */}
+
       <img
         src={AppsdeployerPng}
         alt=""
         style={{ width: "200px" }}
         className="p-2"
       />
+
+      {/*...............Page Section Start ............... */}
 
       <section>
         <div className="container m-5" style={{ width: "70%" }}>
@@ -101,6 +107,11 @@ const Page2 = () => {
           </div>
         </div>
       </section>
+
+      {/*...............Page Section End ............... */}
+
+      {/* ...............Animation Bottom Section ...............*/}
+
       <div>
         <div className="wave"></div>
         <div className="wave"></div>

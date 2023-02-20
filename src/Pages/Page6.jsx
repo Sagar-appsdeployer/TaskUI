@@ -7,17 +7,24 @@ import Table from "react-bootstrap/Table";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import { useSelector } from "react-redux";
 
+/* ..............................Page 4 Component ..............................*/
+
 const Page6 = () => {
   const ProjectName = useSelector((e) => e.app.ProjectName);
   const values = useSelector((e) => e.app.TaskName);
   return (
     <>
+      {/*............... AppsDeployer Image............... */}
+
       <img
         src={AppsdeployerPng}
         alt=""
         style={{ width: "200px" }}
         className="p-2"
       />
+
+      {/*............... Page Section Start............... */}
+
       <div className="row">
         <Col>
           <div className="container m-5 ">
@@ -168,6 +175,11 @@ const Page6 = () => {
           </OverlayTrigger>
         </Col>
       </div>
+
+      {/*............... Page Section End............... */}
+
+      {/* ...............Animation Bottom Section ...............*/}
+
       <div>
         <div className="wave"></div>
         <div className="wave"></div>

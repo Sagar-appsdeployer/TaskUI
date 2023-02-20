@@ -6,17 +6,25 @@ import { Button, Card, Col, Tooltip } from "react-bootstrap";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import { useSelector } from "react-redux";
 import "./page.css";
+
+/* ..............................Page 4 Component ..............................*/
+
 const Page7 = () => {
   const ProjectName = useSelector((e) => e.app.ProjectName);
 
   return (
     <>
+      {/*............... AppsDeployer Image............... */}
+
       <img
         src={AppsdeployerPng}
         alt=""
         style={{ width: "200px" }}
         className="p-2"
       />
+
+      {/*............... Page Section Start............... */}
+
       <div className="row">
         <Col>
           <div className="container m-5 ">
@@ -135,6 +143,10 @@ const Page7 = () => {
           </OverlayTrigger>
         </Col>
       </div>
+      {/*............... Page Section End............... */}
+
+      {/* ...............Animation Bottom Section ...............*/}
+
       <div>
         <div className="wave"></div>
         <div className="wave"></div>

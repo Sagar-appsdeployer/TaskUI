@@ -5,10 +5,12 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { Button, Card, Col, Tooltip } from "react-bootstrap";
 import Table from "react-bootstrap/Table";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
-
-import "./page.css";
 import { useDispatch } from "react-redux";
 import { add } from "../redux/ProjectSlice";
+import "./page.css";
+
+/* ..............................Page 4 Component ..............................*/
+
 const Page4 = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -16,7 +18,7 @@ const Page4 = () => {
 
   const buttonClick = () => {
     if (!value) {
-      window.alert("Please Fill Project name for Preview.");
+      window.alert("Please fill project name for preview.");
     } else {
       dispatch(add(value));
       navigate("/page5");
@@ -25,12 +27,17 @@ const Page4 = () => {
 
   return (
     <>
+      {/*............... AppsDeployer Image............... */}
+
       <img
         src={AppsdeployerPng}
         alt=""
         style={{ width: "200px" }}
         className="p-2"
       />
+
+      {/*............... Page Section Start............... */}
+
       <div className="row">
         <Col className=" rounded-4 shadow">
           <div className="container m-5 ">
@@ -59,7 +66,7 @@ const Page4 = () => {
             />
             <div className="container">
               <Button
-                className="mt-4 px-3 glow-on-hover btn3"
+                className="mt-4  glow-on-hover btn3"
                 variant="light"
                 onClick={buttonClick}
               >
@@ -153,6 +160,9 @@ const Page4 = () => {
           </OverlayTrigger>
         </Col>
       </div>
+      {/*............... Page Section End............... */}
+
+      {/* ...............Animation Bottom Section ...............*/}
 
       <div>
         <div className="wave"></div>
