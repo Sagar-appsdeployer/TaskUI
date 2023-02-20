@@ -6,7 +6,7 @@ import { Button, Card, Col, Tooltip } from "react-bootstrap";
 import Table from "react-bootstrap/Table";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 
-/* ..............................Page 4 Component ..............................*/
+/* ..............................Page 8 Component ..............................*/
 
 const Page8 = () => {
   return (
@@ -17,7 +17,6 @@ const Page8 = () => {
         src={AppsdeployerPng}
         alt=""
         style={{ width: "200px" }}
-        className="p-2"
       />
 
       {/*............... Page Section Start............... */}

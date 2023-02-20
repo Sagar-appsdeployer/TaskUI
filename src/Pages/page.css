@@ -114,3 +114,18 @@ background: url("");
 } */
 
 
+
+
+/* MOBILE RESPONSIVE FOR All Pages  */
+@media (max-width:767px) {
+  .main_heading{
+     margin-left: 0;
+  }
+  
+}
+
+/* TABLET RESPONSIVE FOR All Pages */
+@media (min-width:767px) and (max-width:1023px) {
+  
+
+}

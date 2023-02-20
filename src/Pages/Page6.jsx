@@ -7,7 +7,7 @@ import Table from "react-bootstrap/Table";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import { useSelector } from "react-redux";
 
-/* ..............................Page 4 Component ..............................*/
+/* ..............................Page 6 Component ..............................*/
 
 const Page6 = () => {
   const ProjectName = useSelector((e) => e.app.ProjectName);
@@ -20,7 +20,6 @@ const Page6 = () => {
         src={AppsdeployerPng}
         alt=""
         style={{ width: "200px" }}
-        className="p-2"
       />
 
       {/*............... Page Section Start............... */}

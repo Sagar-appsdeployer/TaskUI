@@ -15,7 +15,7 @@ const Page1 = () => {
         src={AppsdeployerPng}
         alt=""
         style={{ width: "200px" }}
-        className="p-2"
+        
       />
 
       {/* ...............Page Section Start ...............*/}

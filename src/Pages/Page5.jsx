@@ -8,7 +8,7 @@ import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import { useDispatch, useSelector } from "react-redux";
 import { addTask } from "../redux/ProjectSlice";
 
-/* ..............................Page 4 Component ..............................*/
+/* ..............................Page 5 Component ..............................*/
 
 const Page5 = () => {
   const dispatch = useDispatch();
@@ -40,7 +40,6 @@ const Page5 = () => {
         src={AppsdeployerPng}
         alt=""
         style={{ width: "200px" }}
-        className="p-2"
       />
 
       {/*............... Page Section Start............... */}
