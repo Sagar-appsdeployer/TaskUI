@@ -14,11 +14,24 @@ body{
   border: 2px solid white;
 }
 
+.card_plan:active{
+  cursor: pointer;
+  background: rgba(5, 4, 27, 0.662);
+  color:white;
+  border: 2px solid blue;
+}
+
 
 .layout_cards{
   background-color: rgba(10, 41, 45, 0.356);
   border-top: 2px solid rgba(255, 255, 255, 0.792);
 }
+
+.select_button:active{
+  background-color: brown;
+}
+
+
 /* 
 .recommended_text {
 

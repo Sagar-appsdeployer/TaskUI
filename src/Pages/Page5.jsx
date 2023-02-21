@@ -15,20 +15,27 @@ const Page5 = () => {
   const navigate = useNavigate();
 
   const value = useSelector((e) => e.app.ProjectName);
-
+ console.log(value)
   const [input1Value, setInput1Value] = useState("");
   const [input2Value, setInput2Value] = useState("");
   const [input3Value, setInput3Value] = useState("");
   const [input4Value, setInput4Value] = useState("");
 
+
+  const inputValues = {
+  field1:input1Value,
+  field2:input2Value,
+  field3:input3Value,
+  field4:input4Value,
+  }
   const buttonOnClick = () => {
     if (!input1Value || !input2Value || !input3Value || !input4Value) {
       window.alert("Please Fill all the Input field");
     } else {
-      dispatch(addTask(input1Value));
-      dispatch(addTask(input2Value));
-      dispatch(addTask(input3Value));
-      dispatch(addTask(input4Value));
+      dispatch(addTask(inputValues));
+      // dispatch(addTask(input2Value));
+      // dispatch(addTask(input3Value));
+      // dispatch(addTask(input4Value));
       navigate("/page6");
     }
   };
@@ -125,13 +132,7 @@ const Page5 = () => {
           </div>
         </Col>
         <Col className="card_view">
-          <OverlayTrigger
-            overlay={
-              <Tooltip id="tooltip-disabled">
-                This is a Preview of Your Sample Project.
-              </Tooltip>
-            }
-          >
+         
             <Card className="shadow border-0">
               <i className="fa-solid fa-ellipsis  fa-2x px-3 "></i>
 
@@ -155,6 +156,13 @@ const Page5 = () => {
                 <h6 className="text-muted">Calender</h6>
               </div>
 
+              <OverlayTrigger
+            overlay={
+              <Tooltip id="tooltip-disabled">
+                This is a Preview of Your Sample Project.
+              </Tooltip>
+            }
+          >
               <Table bordered responsive>
                 <thead>
                   <tr>
@@ -210,8 +218,9 @@ const Page5 = () => {
                   </tr>
                 </tbody>
               </Table>
+                </OverlayTrigger>
             </Card>
-          </OverlayTrigger>
+         
         </Col>
       </div>
       {/*............... Page Section End............... */}

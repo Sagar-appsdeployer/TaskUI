@@ -46,7 +46,7 @@ const Page3 = () => {
               </Card>
               <Card
                 style={{ width: "400px" }}
-                className="card_plan m-3 p-2 border-0 shadow "
+                className="card_plan m-3 p-2  shadow "
               >
                 <h6>
                   {" "}
@@ -60,7 +60,7 @@ const Page3 = () => {
               </Card>
               <Card
                 style={{ width: "400px" }}
-                className=" card_plan m-3 p-2 border-0 shadow"
+                className=" card_plan m-3 p-2  shadow"
               >
                 <h6>
                   {" "}

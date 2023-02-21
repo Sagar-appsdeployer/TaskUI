@@ -1,8 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    ProjectName:[],
-    TaskName:[]
+    ProjectName:'',
+    TaskName:{}
 }
 export const ProjectSlice = createSlice({
     name:"Project",
@@ -10,13 +10,13 @@ export const ProjectSlice = createSlice({
     reducers:{
 
         add:(state,action)=>{
-            state.ProjectName.push(action.payload)
+            state.ProjectName = action.payload
            
 
         },
 
         addTask:(state,action)=>{
-            state.TaskName.push(action.payload)
+            state.TaskName  = action.payload 
         }
 
     }

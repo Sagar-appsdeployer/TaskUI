@@ -75,17 +75,14 @@ const Page4 = () => {
           </div>
         </Col>
         <Col className="card_view">
-          <OverlayTrigger
-            overlay={
-              <Tooltip id="tooltip-disabled">
-                This is a Preview of Your Sample Project.
-              </Tooltip>
-            }
-          >
+         
             <Card className="shadow border-0">
               <i className="fa-solid fa-ellipsis  fa-2x px-3 "></i>
 
+
+           
               <hr />
+             
               <h2 className="mx-3 display-6">
                 <span className="mx-1  p-1 rounded">
                   <i className="fa-solid fa-list-ul"></i>
@@ -104,8 +101,15 @@ const Page4 = () => {
 
                 <h6 className="text-muted">Calender</h6>
               </div>
-
+              <OverlayTrigger
+            overlay={
+              <Tooltip id="tooltip-disabled">
+                This is a Preview of Your Sample Project.
+              </Tooltip>
+            }
+          >
               <Table bordered responsive>
+             
                 <thead>
                   <tr>
                     <th colSpan={3} className="text-muted text-center">
@@ -155,8 +159,9 @@ const Page4 = () => {
                   </tr>
                 </tbody>
               </Table>
+                </OverlayTrigger>
             </Card>
-          </OverlayTrigger>
+         
         </Col>
       </div>
       {/*............... Page Section End............... */}

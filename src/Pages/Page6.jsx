@@ -82,13 +82,7 @@ const Page6 = () => {
           </div>
         </Col>
         <Col className="card_view">
-          <OverlayTrigger
-            overlay={
-              <Tooltip id="tooltip-disabled">
-                This is a Preview of Your Sample Project.
-              </Tooltip>
-            }
-          >
+         
             <Card className="shadow border-0">
               <i className="fa-solid fa-ellipsis  fa-2x px-3 "></i>
 
@@ -111,6 +105,13 @@ const Page6 = () => {
                 <h6 className="text-muted">Calender</h6>
               </div>
 
+              <OverlayTrigger
+            overlay={
+              <Tooltip id="tooltip-disabled">
+                This is a Preview of Your Sample Project.
+              </Tooltip>
+            }
+          >
               <Table bordered responsive>
                 <thead>
                   <tr>
@@ -133,7 +134,7 @@ const Page6 = () => {
                         {" "}
                         <i className="fa-regular fa-circle-check"></i>
                       </span>
-                      {values[0]}
+                      {values.field1}
                     </td>
                     <td></td>
                     <td> </td>
@@ -143,7 +144,7 @@ const Page6 = () => {
                       <span className="text-muted">
                         <i className="fa-regular fa-circle-check"></i>
                       </span>
-                      {values[1]}
+                      {values.field2}
                     </td>
                     <td></td>
                     <td></td>
@@ -153,7 +154,7 @@ const Page6 = () => {
                       <span className="text-muted">
                         <i className="fa-regular fa-circle-check"></i>
                       </span>
-                      {values[2]}
+                      {values.field3}
                     </td>
                     <td></td>
                     <td></td>
@@ -163,15 +164,16 @@ const Page6 = () => {
                       <span className="text-muted">
                         <i className="fa-regular fa-circle-check"></i>
                       </span>
-                      {values[3]}
+                      {values.field4}
                     </td>
                     <td></td>
                     <td></td>
                   </tr>
                 </tbody>
               </Table>
+                </OverlayTrigger>
             </Card>
-          </OverlayTrigger>
+        
         </Col>
       </div>
 
